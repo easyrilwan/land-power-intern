@@ -5,12 +5,17 @@
   --bg-neutral-black: #263238;
 }
 
-* {
+*,
+::before,
+::after,
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
   font-family: Helvetica, sans-serif;
-  scrollbar-width: none;
 }
 
 p {
@@ -126,7 +131,7 @@ main {
 }
 
 .community {
-  width: 100vw;
+  width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -369,7 +374,7 @@ input[type="text"] {
 }
 
 .community-update {
-  width: 100vw;
+  width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
